@@ -12,6 +12,7 @@ watch(search, () => {
     );
 });
 </script>
+
 <template>
     <div class="container">
         <header>
@@ -20,13 +21,6 @@ watch(search, () => {
         </header>
         <div class="options-container">
             <Card v-for="quiz in quizes" :key="quiz.id" :quiz="quiz" />
-            <!-- <div class="card" v-for="quiz in quizes" :key="quiz.id">
-                <img :src="quiz.img" alt="" />
-                <div class="card-text">
-                    <h2>{{ quiz.name }}</h2>
-                    <p>{{ quiz.questions.length }} questions</p>
-                </div>
-            </div> -->
         </div>
     </div>
 </template>
